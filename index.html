@@ -49,38 +49,50 @@
 <p>O uso de recursos religiosos pode gerar registros que revelem crenças, convicções ou práticas religiosas. O Paraclitus utiliza esses registros para fornecer as funcionalidades escolhidas pelo próprio usuário, como guardar reflexões e acompanhar leituras. O acesso a esses dados deve ser limitado conforme as permissões do sistema e as medidas de segurança aplicáveis.</p>
 <p>O usuário deve evitar inserir em reflexões ou anotações informações sensíveis de terceiros sem necessidade ou autorização adequada.</p>
 
-<h2>5. Serviços de terceiros e compartilhamento</h2>
+<h2>5. Comunidade e conteúdo compartilhado</h2>
+<p>O aplicativo possui recursos comunitários nos quais o usuário pode criar pedidos de oração, publicações e respostas. Quando o usuário publica ou participa dessas áreas, o conteúdo pode ficar visível a outros membros autenticados, conforme as regras de cada funcionalidade. Em conteúdos marcados como anônimos, o nome e a foto do autor são ocultados no mural. O aplicativo não exibe e-mail, telefone ou paróquia nos murais descritos na auditoria técnica.</p>
+<p>O usuário deve considerar que o conteúdo que decide publicar em espaços comunitários poderá ser visto por outros membros. Pedidos, reflexões e anotações de uso pessoal não devem ser confundidos com publicações comunitárias.</p>
+
+<h2>6. Localização e recurso SERVIR</h2>
+<p>Quando o usuário escolhe utilizar o recurso SERVIR e toca no comando para buscar comunidades próximas, o aplicativo solicita acesso à localização precisa do aparelho. As coordenadas são enviadas ao servidor para consultar dados de comunidades no serviço OpenStreetMap/Overpass. O sistema mantém as coordenadas em um cache técnico por até 7 dias para apoiar essa consulta; conforme a auditoria, esse cache não é vinculado à conta do usuário. A localização não é solicitada continuamente pelo aplicativo para essa finalidade.</p>
+<p>Essa operação é diferente da informação de cidade ou paróquia que o próprio usuário pode cadastrar no perfil. A informação de paróquia pode incluir coordenadas associadas ao perfil e é utilizada para as funcionalidades correspondentes.</p>
+
+<h2>7. Dados técnicos, navegação e diagnóstico</h2>
+<p>A hospedagem do aplicativo utiliza mecanismos técnicos para registrar visualizações de páginas e cliques, além de receber relatórios de erros. Os relatórios de erro podem incluir nome, mensagem e pilha do erro, rota acessada e contexto técnico limitado. A auditoria identificou mascaramento dos campos de digitação e bloqueio de seletores sensíveis, remoção de parâmetros de URL que contenham termos como token, senha, código ou e-mail, e gravação de sessão desativada no momento da verificação.</p>
+<p>Esses registros são utilizados para funcionamento, segurança e diagnóstico. Prazos de retenção, identificadores técnicos adicionais e todos os subprocessadores envolvidos ainda dependem de confirmação documental dos fornecedores; esta política não atribui prazos que não foram verificados.</p>
+
+<h2>8. Serviços de terceiros e compartilhamento</h2>
 <p>O aplicativo utiliza a infraestrutura do <strong>Supabase integrada ao Lovable Cloud</strong> para recursos de autenticação, banco de dados e funcionamento da aplicação. O fluxo de autenticação também integra provedores de login social, como Google e Apple, quando escolhidos pelo usuário.</p>
 <p>Esses fornecedores podem tratar dados em nome do aplicativo ou conforme suas próprias responsabilidades e políticas. O compartilhamento limita-se ao necessário para autenticação, hospedagem, armazenamento, segurança e suporte técnico. O Paraclitus não declara vender dados pessoais dos usuários.</p>
 <p>O uso de login social também está sujeito às políticas de privacidade do respectivo provedor. Recomendamos que o usuário consulte essas políticas antes de utilizar tais opções.</p>
 
-<h2>6. Armazenamento, segurança e retenção</h2>
+<h2>9. Armazenamento, segurança e retenção</h2>
 <p>São adotadas medidas técnicas e organizacionais compatíveis com a estrutura do aplicativo para proteger os dados contra acesso não autorizado, perda, alteração ou divulgação indevida. O sistema utiliza autenticação e políticas de controle de acesso no banco de dados para restringir o acesso a registros pessoais.</p>
 <p>Os dados são mantidos enquanto forem necessários para disponibilizar a conta e suas funcionalidades, atender às finalidades informadas ou cumprir obrigações legais. Prazos específicos de retenção podem variar conforme a categoria do dado, os requisitos técnicos e as obrigações aplicáveis.</p>
 <p>Nenhum sistema é totalmente livre de riscos. Caso ocorra incidente que possa acarretar risco ou dano relevante, serão adotadas as providências cabíveis nos termos da legislação aplicável.</p>
 
-<h2>7. Direitos do titular</h2>
+<h2>10. Direitos do titular</h2>
 <p>Nos termos da LGPD, o usuário pode solicitar, observadas as condições legais:</p>
 <ul>
 <li>confirmação da existência de tratamento e acesso aos dados;</li><li>correção de dados incompletos, inexatos ou desatualizados;</li><li>anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei;</li><li>portabilidade, quando aplicável e regulamentada;</li><li>informações sobre compartilhamento de dados;</li><li>revogação do consentimento e eliminação dos dados tratados com essa base legal, ressalvadas as hipóteses legais de conservação.</li>
 </ul>
 <p>As solicitações podem ser encaminhadas para <strong>paraclitus.app@gmail.com</strong>. Poderemos solicitar informações razoáveis para confirmar a identidade do solicitante e proteger a conta contra pedidos feitos por terceiros.</p>
 
-<h2>8. Exclusão da conta e dos dados</h2>
+<h2>11. Exclusão da conta e dos dados</h2>
 <p>O usuário pode iniciar a exclusão da conta diretamente no aplicativo, em <strong>Perfil → Privacidade</strong>, utilizando a opção de exclusão de conta e seguindo as confirmações apresentadas.</p>
 <p>Também é possível solicitar a exclusão sem acessar o aplicativo, por meio da página pública <a href="https://haps85.github.io/paraclitus-privacy/exclusao.html">Exclusão de conta e dados – Paraclitus</a>, que permite encaminhar o pedido para <a href="mailto:paraclitus.app@gmail.com">paraclitus.app@gmail.com</a>. A solicitação deve informar o endereço de e-mail cadastrado na conta. Poderemos solicitar informações razoáveis para confirmar a identidade do titular.</p>
 <p>Após a validação da solicitação, os dados pessoais associados serão excluídos, ressalvadas as hipóteses legais de conservação. Cópias residuais em rotinas de backup poderão permanecer pelo período técnico necessário à sua sobrescrita ou eliminação segura, sem utilização para finalidades incompatíveis.</p>
 
-<h2>9. Crianças e adolescentes</h2>
+<h2>12. Crianças e adolescentes</h2>
 <p>O aplicativo não é direcionado especificamente a crianças. Caso dados pessoais de crianças ou adolescentes sejam tratados, esse tratamento deverá observar seu melhor interesse e os requisitos específicos da legislação brasileira, inclusive as regras de representação e consentimento quando aplicáveis. Responsáveis que identifiquem tratamento inadequado podem entrar em contato pelo canal indicado nesta política.</p>
 
-<h2>10. Funcionalidades em desenvolvimento</h2>
+<h2>13. Funcionalidades em desenvolvimento</h2>
 <p>Algumas áreas exibidas na interface podem representar funcionalidades planejadas ou ainda não implementadas. A existência de uma tela ou item de menu, por si só, não significa que dados estejam sendo coletados por esse recurso. Quando uma nova funcionalidade passar a tratar dados pessoais de forma relevante, esta política será revisada para explicar o tratamento correspondente.</p>
 
-<h2>11. Alterações nesta política</h2>
+<h2>14. Alterações nesta política</h2>
 <p>Esta política poderá ser atualizada para refletir mudanças no aplicativo, nos serviços utilizados ou na legislação. A versão vigente será publicada nesta página, com a respectiva data de atualização. Recomendamos sua consulta periódica.</p>
 
-<h2>12. Contato</h2>
+<h2>15. Contato</h2>
 <p>Para dúvidas, solicitações ou assuntos relacionados ao tratamento de dados pessoais, entre em contato:</p>
 <p><strong>E-mail:</strong> <a href="mailto:paraclitus.app@gmail.com">paraclitus.app@gmail.com</a></p>
 </main>
